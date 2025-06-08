@@ -3,62 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Registration Form</title>
-   <link rel="stylesheet" href="./page.css" />
+  <title>Index page</title>
+  <link rel="icon" type="image/x-icon" href="./img/objective-lens-icon-with-six-rainbow-colors-vector.jpg">
+  <link rel="stylesheet" href="css/page.css"/>
 </head>
 <body>
   <header>
     <nav>
       <div style="flex: 1; text-align: left;">
-        <h1>Logo</h1>
-      </div>
+        <img src="./img/download.jpeg" alt="Logo" style="height: 60px;" />
+    </div>
 
       <ul style="flex: 2; justify-content: center; font-weight: bold;">
-        <li>Home</li>
-        <li>About</li>
-        <li>Demo</li>
-        <li>Blog</li>
-        <li>Services</li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="demo.html">Demo</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="services.html">Services</a></li>
       </ul>
 
-      <div style="flex: 1; text-align: right;">
+      <div style="flex: 1; text-align: right; font-weight: bold;">
         <ul>
-          <li>Registration</li>
+          <li><a href="registration.html">Registration</a></li>
+          
+          
         </ul>
       </div>
     </nav>
   </header>
 
-  
-  <div class="form-container">
-    <h2>Registration Form</h2>
-    <form>
-      <div class="form-group slide-left delay-1">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="fullname" required>
-      </div>
-
-      <div class="form-group slide-right delay-2">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-
-      <div class="form-group slide-left delay-3">
-        <label for="password">Create Password</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-
-      <div class="form-group slide-right delay-4">
-        <label>Gender</label>
-        <div class="gender-options">
-          <label><input type="radio" name="gender" value="male">Male</label>
-          <label><input type="radio" name="gender" value="female"> Female</label>
-          <label><input type="radio" name="gender" value="other"> Other</label>
-        </div>
-      </div>
-
-      <button type="submit" class="submit-btn">Register</button>
-    </form>
+  <main style="display: flex; padding: 20px;">
+    <div style="flex: 1; padding-right: 20px; text-align: justify;">
+    <h1 style="color: #13a5e9;">beautiful village</h1>
+    <p>
+      Chinigevaripalem is a peaceful and beautiful village located in Andhra Pradesh.
+      Surrounded by lush green fields and fresh air, it's known for its friendly people,
+      traditional culture, and agricultural lifestyle. The village has
+      a temple, and peaceful streets where children play freely. It’s a perfect place
+      for anyone who wants to experience rural life and natural beauty.
+    </p>
+    </div>
+  <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+    <img src="./img/one.jpg" alt="Village View" style="width: 50%; height: 250px; border-radius: 12px;">
   </div>
+</main>
+
+  <footer>
+    <div class="footer-text">
+      <p>&copy; All rights resived <a href="mstechsolution.in"  target="_blank">MS Tech Solution</a></p>
+    </div>
+  </footer>
 </body>
 </html>
